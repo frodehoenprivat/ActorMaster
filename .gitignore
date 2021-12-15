@@ -1,3 +1,4 @@
 ﻿bin/
 ActorMaster/obj/
-.vs/
+ActorMaster/Migrations/
+*.sentinel
