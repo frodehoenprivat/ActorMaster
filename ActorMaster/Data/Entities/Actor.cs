@@ -7,9 +7,7 @@ namespace ActorMaster.Data.Entities
         public int Id { get; set; }
         public int CustomerNo { get; set; }
         public string? Name { get; set; }
-        public ActorTypeEnum Type { get; set; }
+        public ActorType Type { get; set; }
         public bool IsActive { get; set; }
     }
-
-    
 }

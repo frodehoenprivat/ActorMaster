@@ -1,6 +1,6 @@
 ﻿namespace ActorMaster.Enums
 {
-    public enum ActorTypeEnum
+    public enum ActorType
     {
         Reseller,
         Private,

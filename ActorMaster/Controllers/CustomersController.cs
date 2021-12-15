@@ -8,12 +8,6 @@ namespace ActorMaster.Controllers
     [Route("[controller]")]
     public class CustomersController : ControllerBase
     {
-        private static readonly string[] customerNames = new[]
-        {
-        "Malerbua", "XL-Bygg", "Ski Bygg", "Malerstua", "Byggern", "Byggmakker", "Fargerike"
-    };
-        
-
         private readonly ILogger<CustomersController> logger;
         public CustomersController(ILogger<CustomersController> logger )
         {

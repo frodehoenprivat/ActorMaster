@@ -13,5 +13,25 @@ namespace ActorMaster.Data
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Actors");
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Actor>()
+               .HasData(new Actor()
+               {
+                   Id = 1,
+                   CustomerNo = 10011,
+                   Name = "Liten fisk",
+                   Type = Enums.ActorType.Reseller
+               },
+               new Actor()
+               {
+                   Id = 2,
+                   CustomerNo = 10054,
+                   Name = "Blå sykkel",
+                   Type = Enums.ActorType.Private
+               }
+               );
+        }
     }
 }
